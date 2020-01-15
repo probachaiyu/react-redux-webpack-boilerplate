@@ -1,0 +1,25 @@
+{
+  "extends": ["react-app", "prettier"],
+  "rules": {
+    "jsx-quotes": [1, "prefer-double"]
+  },
+  "plugins": ["prettier", "react",
+    "jsx-a11y"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  }
+}
